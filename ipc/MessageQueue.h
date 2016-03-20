@@ -1,4 +1,5 @@
 #ifndef _MESSAGE_QUEUE_
+#define _MESSAGE_QUEUE_
 
 #include <iostream>
 #include <sys/msg.h>
