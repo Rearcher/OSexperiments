@@ -7,14 +7,14 @@ const int MAX_GAME_NUM = 1000;
 
 /* Player function, generate randomly */
 void Player(int queue_id, int res_id, std::string filename) {
-	
+
 	std::ofstream out(filename);
 	if (!out.is_open()) {
 		std::cerr << "create file " << filename
-			      << "failed.\n";
+			<< "failed.\n";
 		return;
 	}
-	
+
 	for (int i = 0; i < MAX_GAME_NUM; ++i) {
 		message msg(1, rand()%3+1), msg_get;
 		SendMessage(queue_id, msg);
@@ -31,7 +31,7 @@ void Judger(int q1, int q2, int a1, int a2, std::string filename) {
 	std::ofstream out(filename);
 	if (!out.is_open()) {
 		std::cerr << "create file " << filename
-			      << "failed.\n";
+			<< "failed.\n";
 		return;
 	}
 
