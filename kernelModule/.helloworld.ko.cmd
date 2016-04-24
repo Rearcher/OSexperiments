@@ -1,1 +1,0 @@
-cmd_/home/rahul/Documents/Gits/OSexperiments/kernelModule/helloworld.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/rahul/Documents/Gits/OSexperiments/kernelModule/helloworld.ko /home/rahul/Documents/Gits/OSexperiments/kernelModule/helloworld.o /home/rahul/Documents/Gits/OSexperiments/kernelModule/helloworld.mod.o
